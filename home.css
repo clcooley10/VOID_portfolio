@@ -12,6 +12,7 @@ ol[class] {
 }
 ​
 /* Remove default margin */
+html,
 body,
 h1,
 h2,
@@ -25,7 +26,8 @@ figure,
 figcaption,
 blockquote,
 dl,
-dd {
+dd
+div {
   margin: 0;
 }
 ​
@@ -64,83 +66,217 @@ select {
 
 
 /* END OF RESET STYLES*/
+.background-blue {
+  background-color: #474985;
+} 
 .nav-bar {
-    display: flex;
-    height: 10rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    flex-direction: row;
-    align-items: center;
-    border-bottom: 2px solid black;
-    justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+
+  display: flex;
+  height: 3rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 5px solid #474985;
+  justify-content: space-between;
+  background-color: white;
 
 }
+
 .name-in-hdr {
-    margin-right: auto;
-    color: blue;
+    /*margin-right: auto;*/
+    padding-left: 5rem;
+    color: #474985;
+    background-color: white
+
 }
 
-.btn {
-
+.header-icon {
     background-color: white;
-    color: black;
-    padding: 14px 28px;
-    font-size: 17px;
+    color: #474985;
+    margin: 1rem 1rem;
+    padding: .5rem .5rem;
+    font-size: 1.5rem;
     cursor: pointer;
     text-decoration: none;
 
   }
-  
-  /* find better colors */
-  .About {
-    border-color: red;
-    color:red;
-  }
-  
-  a.About:hover {
-    background-color: red;
+  .header-icon:hover {
+    background-color: #474985;
     color: white;
   }
-  
-  /* Blue */
-  .Projects {
-    border-color: blue;
-    color: blue
+
+  /*
+  * COLOR PALETTE:
+  * #88BDBC
+  * #254E58
+  * #112D32
+  * #4F4A41
+  * #6E6658
+  */
+  /*box shadow
+  mullish
+  */
+  .resume {
+    margin-left:5rem;
+    padding: .3rem .3rem;
+    border: 3px solid  #474985;
+    border-radius: 8px;
+    background-color: white;
+    color: #254E58;
+
   }
-  
-  .Projects:hover {
-    background: blue;
-    color: white;
-  }
-  
-  /* Orange */
-  .Experience {
-    border-color: orange;
-    color: orange;
-  }
-  
-  .Experience:hover {
-    background: orange;
-    color: white;
-  }
-  
-  /* Red */
-  .Contact {
-    border-color: green;
-    color: green
-  }
-  
-  .Contact:hover {
-    background: green;
-    color: white;
-  }
-  
-  /* Gray */
-  .Resume {
-    border-color: purple;
-    color: purple;
-  }
-  
-  .Resume:hover {
-    background: purple;
-    color: white
-  }
+/*borders are only here to help see divisions*/
+#greeting {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
+.bio-wrapper {
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.introduction {
+  color:#112D32
+}
+#greeting img {  
+  width: 16rem;
+  height: 13rem;
+  border-radius:8px;
+}
+
+.text-blue {
+  color: #474985;
+}
+.text-white {
+  color: white;
+}
+.small-text {
+  font-size: 1.5rem;
+}
+
+#exclaim-the-name {
+  font-size: 3rem;
+}
+
+#about-me {
+  border-bottom: 2px dashed black;
+}
+
+.bio-description {
+
+  width:50rem;
+  margin: 5rem auto;
+  text-align: center;
+  color: #112D32;
+}
+
+#projects {
+  height: 30rem;
+  border-bottom:2px dashed black;
+}
+
+#experience {
+  height: 50rem;
+  border-bottom: 2px dashed black;
+}
+
+.experience-work-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 35rem;
+  padding-top: 3rem;
+}
+
+.void-exp {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+  border-radius: 16px;
+  width: 24%;
+  box-shadow: .3rem .3rem .2rem white;
+}
+
+.text-body-format {
+  border-top: 2px solid white;
+  padding: .4rem;
+}
+
+#void-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mdining-image {
+  display: flex;
+  justify-content: center;
+}
+
+#palio-image {
+  display: flex;
+  justify-content: center;
+}
+
+#void-logo {
+  height: 8rem;
+  margin: 1rem 0;
+}
+
+#mdining-logo {
+
+  height: 6rem;
+  width: 16rem;
+  margin: 2rem 0;
+}
+
+#palio-logo {
+  height: 6rem;
+  width: 18rem;
+  margin: 2rem 0;
+}
+
+.dining-hall-exp {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #e4dbd9;
+  border-radius: 16px;
+  width: 24%;
+  box-shadow: .3rem .3rem .2rem white;
+}
+
+.palio-exp {
+  display:flex;
+  flex-direction: column;
+  border: 2px solid #e4dbd9;
+  border-radius: 16px;
+  width: 24%;
+  box-shadow: .3rem .3rem .2rem white;
+}
+
+
+
+#contact {
+  height: 30rem;
+  border-bottom: 2px solid #474985
+}
+
+.titles {
+  width:20rem;
+  font-size: 2.5rem;
+  padding-left: 5rem;
+  padding-top: 3rem;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 5rem;
+}

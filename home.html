@@ -8,13 +8,102 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="nav-bar">
-        <h1 class="name-in-hdr">Christopher Cooley</h1>
-        <a href="about.html" class="btn About">About</a>
-        <a href="projects.html" class="btn Projects">Projects</a>
-        <a href="experience.html" class="btn Experience">Experience</a>
-        <a href="contact.html" class="btn Contact">Contact</a>
-        <a href="https://google.com" class="btn Resume">Resume</a>
+    <div class="nav-bar"> <!--Adding wrapper divs makes name move to icons and causes issues-->
+        <div class="left">
+            <h1 class="name-in-hdr">Christopher Cooley</h1>
+        </div>
+        <div class="right">
+            <a href="#about-me" class="header-icon">About</a>
+            <a href="#projects" class="header-icon">Projects</a>
+            <a href="#experience" class="header-icon">Experience</a>
+            <a href="#contact" class="header-icon">Contact</a>
+            <a href="Christopher_Cooley_9-14-20.pdf" class="header-icon resume">Resume</a>
+        </div>
+    </div>
+
+    <div id="greeting">
+        <div class="bio-wrapper">
+            <img  src="bio-headshot.jpeg" alt= "headshot in bio section">
+            <div id="itroduction-and-thanks" class= "text-blue">
+                <h1 id="exclaim-the-name"><b>Hi! </b>I'm Chris</h1>
+                <p class="small-text">Thanks for checking out my page!  </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-me" class="background-blue">
+        <h1 class= "text-white titles">About me</h1>
+        <div class= "bio-description">
+            <p class="text-white small-text">I'm currently a senior at the University of Michigan with a major in Computer
+                Science and a minor in French Language and Studies. I grew up just outside 
+                of Ann Arbor so attending UofM was always a goal of mine. Outside of school
+                I enjoy playing soccer, roller blading, and hanging out with my housemates.
+            </p>
+        </div>
+    </div>
+    <div id="projects">
+        <h1 class="titles">Projects</h1>
+
+    </div>
+    <div id="experience" class="background-blue">
+        <h1 class="text-white titles">Experience/Work</h1>
+        <div class="text-white experience-work-container">
+            <div class= "void-exp">
+                <div id="void-image">
+                    <img id= "void-logo" src="void-logo.png" alt="Void tech consulting logo">
+                </div>
+                <div class="text-body-format">
+                    <h1>Void Tech Consulting</h1>
+                    <h2>2020-current</h2>
+                    <p>ipsum "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis 
+                        et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos 
+                        qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum 
+                        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi 
+                    </p>
+                </div>
+            </div>
+            <div class="dining-hall-exp">
+                <div id="mdining-image">
+                    <img id="mdining-logo" src="mdining-logo.jpg" alt="Michigan Dining logo">
+                </div>
+                <div class="text-body-format">
+                    <h1>Student Manager</h1>
+                    <h2>2018-current</h2>
+                    <p>ipsum "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis 
+                        et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos 
+                        qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum 
+                        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+                    </p>
+                </div>
+            </div>
+            <div class="palio-exp">
+                <div id="palio-image">
+                    <img id="palio-logo" src="palio-logo.jpg" alt="Palio logo">
+                </div>
+                <div class="text-body-format">
+                    <h1>Server</h1>
+                    <h2>2019</h2>
+                    <p>ipsum "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+                        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis 
+                        et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos 
+                        qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum 
+                        quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <h1 class= "text-blue titles">Contact me</h1>
+    </div>
+
+    <div class="footer" class="background-blue">
+        <p>Email me at <a href="mailto:clcooley@umich.edu">clcooley@umich.edu</a></p>
     </div>
 </body>
 </html>
