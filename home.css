@@ -126,7 +126,7 @@ select {
     border: 3px solid  #474985;
     border-radius: 8px;
     background-color: white;
-    color: #254E58;
+    color: #474985;
 
   }
 /*borders are only here to help see divisions*/
@@ -145,6 +145,8 @@ select {
 .introduction {
   color:#112D32
 }
+
+
 #greeting img {  
   width: 16rem;
   height: 13rem;
@@ -166,7 +168,7 @@ select {
 }
 
 #about-me {
-  border-bottom: 2px dashed black;
+  border-bottom: 2px dashed #474985;
 }
 
 .bio-description {
@@ -179,12 +181,10 @@ select {
 
 #projects {
   height: 30rem;
-  border-bottom:2px dashed black;
 }
 
 #experience {
   height: 50rem;
-  border-bottom: 2px dashed black;
 }
 
 .experience-work-container {
@@ -263,7 +263,6 @@ select {
 
 #contact {
   height: 30rem;
-  border-bottom: 2px solid #474985
 }
 
 .titles {
@@ -279,4 +278,22 @@ select {
   justify-content: center;
   align-items: flex-end;
   height: 5rem;
+  background-color: #474985;
+  font-size:2rem;
+  color: white;
+}
+/*
+.seperator-design {
+  display: block;
+  width: 100%;
+  height: 90px;
+  background: yellow;
+}
+*/
+svg {
+  display: block;
+  width: 100%;
+  height: 5rem;
+  fill: #474985;
+
 }
